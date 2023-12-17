@@ -1,0 +1,70 @@
+* {
+    padding: 0;  /* внутренние отступы для всех контейнеров будут равны 0*/
+    margin: 0;  /* внешние отступы для всех контейнеров будут равны 0*/
+    box-sizing: border-box;/*box-sizing-размер контейнера, border-box-стиль для управления размерами контейнера */
+}
+
+@font-face { /* шрифт */
+    font-family: RobotoR; /* свойство шрифта 0*/
+    src: url(../fonts/Roboto-Regular.ttf);/* папка, содержащая все исходные тексты */
+}
+
+
+html, body, main {
+    height: 0; /* высота */
+    font-family: RobotoR; /* свойство шрифта 0*/
+}
+
+.first {
+    height: 100%; /* высота */
+    background-image: url(../img/img1.jpg); /* фото заднего фона*/
+    background-position: center; /* позиция заднего фона*/
+    -webkit-background-size: cover; /* позволяет указывать размеры фонового изображения*/
+    background-size: cover; /* размер заднего фона*/
+}
+
+.first img{ /* первое фото*/
+    color: white; /* цвет */
+}
+
+.tourism{
+    width: 100%; /* ширина*/
+    text-align: center; /* позиция текста, заголовка*/
+    padding-top: 80px; /* отступ сверху*/
+    font-size: 20px; /* размер шрифта*/
+}
+
+.text-container {
+    width: 40%; /* ширина*/
+    margin-left: 15%; /* отступ слева*/
+    margin-top: 15%;/* отступ сверху*/
+}
+
+.first-line {
+    text-transform: uppercase; /* свойство, с помощью которого можно трансформировать буквы в тексте*/
+    font-size: 26px; /* размер шрифта*/
+    font-weight: bold; /* вес шрифта*/
+    letter-spacing: 1px; /* интервал между */
+    opacity: 0.5; /* прозрачность*/
+    line-height: 1;/* высота линии*/
+}
+
+.second-line {
+    text-transform: uppercase; /* свойство, с помощью которого можно трансформировать буквы в тексте*/
+    font-size: 64px; /* размер шрифта*/
+    line-height: 1;   /* высота линии*/
+    font-weight: bold; /* вес шрифта*/
+    letter-spacing: 5px; /* интервал между */
+}
+
+.third-line {
+    font-size: 20px; /* размер шрифта*/
+}
+
+.second {
+    height: 100%; /* высота */
+    display: flex; /* дисплей */
+    justify-content: center; /* свойство которое определяет как браузер распределяет пространство между и вокруг элементов контента */
+    -ms-align-items: center; /* это свойство, которое задает выравнивание элементов */
+    align-items: center; /* свойство которое выравнивает элементы */
+}
